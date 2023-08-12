@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 
 const FormProduct = () => {
@@ -35,6 +35,7 @@ const FormProduct = () => {
                         <textarea name="description" id="" cols="20" rows="5" onChange={e=>setDescription(e.target.value)}></textarea>
                     </div>
                     <button type='submit'>Create</button>
+                    <Link to='/'>Home</Link>
                 </div>
             </form>
 
